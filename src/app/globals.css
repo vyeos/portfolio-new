@@ -3,130 +3,142 @@
 @tailwind utilities;
 
 @layer base {
-    :root {
-      --background: 0 0% 100%;
-      --foreground: 210 11.1% 3.53%;
+  :root {
+    /* Gruvbox Light (Background: #fbf1c7) */
+    --background: 48 84% 88%;
+    /* Gruvbox Dark Grey (Foreground: #3c3836) */
+    --foreground: 20 6% 23%;
 
-      --card: 0 0% 100%;
-      --card-foreground: 210 11.1% 3.53%;
+    --card: 48 84% 88%;
+    --card-foreground: 20 6% 23%;
 
-      --popover: 0 0% 100%;
-      --popover-foreground: 210 11.1% 3.53%;
+    --popover: 48 84% 88%;
+    --popover-foreground: 20 6% 23%;
 
-      --primary: 0 0% 9%;
-      --primary-foreground: 0 0% 98%;
+    /* Gruvbox Dark Orange (#d65d0e) */
+    --primary: 20 87% 45%;
+    --primary-foreground: 48 84% 88%;
 
-      --secondary: 0 0% 96.1%;
-      --secondary-foreground: 0 0% 9%;
+    /* Gruvbox Beige (#ebdbb2) */
+    --secondary: 42 44% 81%;
+    --secondary-foreground: 20 6% 23%;
 
-      --muted: 0 0% 96.1%;
-      --muted-foreground: 0 0% 45.1%;
+    --muted: 42 44% 81%;
+    --muted-foreground: 20 4% 38%;
 
-      --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
+    --accent: 42 44% 81%;
+    --accent-foreground: 20 6% 23%;
 
-      --destructive: 0 84.2% 60.2%;
-      --destructive-foreground: 0 0% 98%;
+    /* Gruvbox Red (#cc241d) */
+    --destructive: 2 71% 47%;
+    --destructive-foreground: 48 84% 88%;
 
-      --border: 0 0% 89.8%;
-      --input: 0 0% 89.8%;
-      --ring: 0 0% 3.9%;
+    /* Darker Beige Border (#d5c4a1) */
+    --border: 38 39% 73%;
+    --input: 38 39% 73%;
+    --ring: 20 87% 45%;
 
-      --radius: 0.5rem;
-    }
-
-    .dark {
-      --background: 210 11.1% 3.53%;
-      --foreground: 0 0% 98%;
-
-      --card: 210 11.1% 3.53%;
-      --card-foreground: 0 0% 98%;
-
-      --popover: 210 11.1% 3.53%;
-      --popover-foreground: 0 0% 98%;
-
-      --primary: 0 0% 98%;
-      --primary-foreground: 0 0% 9%;
-
-      --secondary: 0 0% 14.9%;
-      --secondary-foreground: 0 0% 98%;
-
-      --muted: 0 0% 14.9%;
-      --muted-foreground: 0 0% 63.9%;
-
-      --accent: 0 0% 14.9%;
-      --accent-foreground: 0 0% 98%;
-
-      --destructive: 0 62.8% 30.6%;
-      --destructive-foreground: 0 0% 98%;
-
-      --border: 0 0% 14.9%;
-      --input: 0 0% 14.9%;
-      --ring: 0 0% 83.1%;
-    }
+    --radius: 0.5rem;
   }
 
-  @layer base {
-    * {
-      @apply border-border;
-    }
-    body {
-      @apply bg-background text-foreground;
-    }
-  }
+  .dark {
+    /* Gruvbox Dark Hard (#1d2021) or Med (#282828) - Using #282828 here */
+    --background: 0 0% 16%;
+    /* Gruvbox Light Cream (#ebdbb2) */
+    --foreground: 42 44% 81%;
 
-  h3 code {
-    @apply !text-lg md:!text-xl;
-  }
-  
-  pre {
-    @apply !px-0 rounded-lg overflow-x-auto py-4
-  }
-   
-  pre [data-line] {
-    @apply px-4
-  }
+    --card: 0 0% 16%;
+    --card-foreground: 42 44% 81%;
 
-  code {
-    @apply text-sm md:text-base !leading-loose;
+    --popover: 0 0% 16%;
+    --popover-foreground: 42 44% 81%;
+
+    /* Gruvbox Bright Orange (#fe8019) */
+    --primary: 25 82% 55%;
+    --primary-foreground: 0 0% 16%;
+
+    /* Gruvbox Dark Grey (#3c3836) */
+    --secondary: 20 6% 23%;
+    --secondary-foreground: 42 44% 81%;
+
+    --muted: 20 6% 23%;
+    --muted-foreground: 43 6% 63%;
+
+    --accent: 20 6% 23%;
+    --accent-foreground: 42 44% 81%;
+
+    /* Gruvbox Bright Red (#fb4934) */
+    --destructive: 3 83% 60%;
+    --destructive-foreground: 0 0% 16%;
+
+    /* Gruvbox Dark Grey Border */
+    --border: 20 6% 23%;
+    --input: 20 6% 23%;
+    --ring: 25 82% 55%;
   }
-  
-  pre > code {
-    counter-reset: line;
+}
+
+@layer base {
+  * {
+    @apply border-border;
   }
-  
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+h3 code {
+  @apply !text-lg md:!text-xl;
+}
+
+pre {
+  @apply !px-0 rounded-lg overflow-x-auto py-4;
+}
+
+pre [data-line] {
+  @apply px-4;
+}
+
+code {
+  @apply text-sm md:text-base !leading-loose;
+}
+
+pre > code {
+  counter-reset: line;
+}
+
+code[data-theme*=" "],
+code[data-theme*=" "] span {
+  color: var(--shiki-light);
+  background-color: var(--shiki-light-bg);
+}
+
+@media (prefers-color-scheme: dark) {
   code[data-theme*=" "],
   code[data-theme*=" "] span {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
   }
-   
-  @media (prefers-color-scheme: dark) {
-    code[data-theme*=" "],
-    code[data-theme*=" "] span {
-      color: var(--shiki-dark);
-      background-color: var(--shiki-dark-bg);
-    }
-  }
-  
-  code[data-line-numbers] {
-    counter-reset: line;
-  }
-  
-  code[data-line-numbers] > [data-line]::before {
-    counter-increment: line;
-    content: counter(line);
-    @apply inline-block w-4 mr-4 text-right text-gray-500;
-  }
- 
-  code {
-    counter-reset: line;
-  }
- 
-  code > [data-line]::before {
+}
+
+code[data-line-numbers] {
+  counter-reset: line;
+}
+
+code[data-line-numbers] > [data-line]::before {
   counter-increment: line;
   content: counter(line);
- 
+  @apply inline-block w-4 mr-4 text-right text-gray-500;
+}
+
+code {
+  counter-reset: line;
+}
+
+code > [data-line]::before {
+  counter-increment: line;
+  content: counter(line);
+
   /* Other styling */
   display: inline-block;
   width: 1rem;
@@ -134,11 +146,12 @@
   text-align: right;
   color: gray;
 }
- 
+
 code[data-line-numbers-max-digits="2"] > [data-line]::before {
   width: 2rem;
 }
- 
+
 code[data-line-numbers-max-digits="3"] > [data-line]::before {
   width: 3rem;
 }
+
