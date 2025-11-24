@@ -7,10 +7,9 @@ export const DATA = {
   url: "https://www.rudarp.vercel.app",
   location: "Ahmedabad, Gujarat",
   locationLink: "",
-  description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
+  description: "Just a guy trying to make awesome and performant software.",
   summary:
-    "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
+    "Full-stack developer with a strong focus on performance, user and developer experience, and clean system design. I enjoy turning ideas into scalable products using modern web technologies.",
   avatarUrl: "/me.JPG",
   skills: [
     "React",
@@ -70,18 +69,18 @@ export const DATA = {
   },
 
   work: [
-    {
-      company: "Atomic Finance",
-      href: "https://atomic.finance",
-      badges: [],
-      location: "Remote",
-      title: "Bitcoin Protocol Engineer",
-      logoUrl: "/atomic.png",
-      start: "May 2021",
-      end: "Oct 2022",
-      description:
-        "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
-    },
+    // {
+    //   company: "Atomic Finance",
+    //   href: "https://atomic.finance",
+    //   badges: [],
+    //   location: "Remote",
+    //   title: "Bitcoin Protocol Engineer",
+    //   logoUrl: "/atomic.png",
+    //   start: "May 2021",
+    //   end: "Oct 2022",
+    //   description:
+    //     "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
+    // },
   ],
   education: [
     {
@@ -96,126 +95,112 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Chat Collect",
-      href: "https://chatcollect.com",
-      dates: "Jan 2024 - Feb 2024",
+      title: "Zendra PDF",
+      href: "https://zendrapdf.vercel.app",
+      dates: "Sept 2025 - Nov 2025",
       active: true,
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+        "Built a full-stack platform that transforms the traditionally tedious PDF-generation workflow into a one-click automated process. Integrates authentication, storage, and AI-powered document generation to provide a seamless user experience.",
       technologies: [
         "Next.js",
         "Typescript",
+        "Better Auth",
         "PostgreSQL",
-        "Prisma",
+        "Supabase",
+        "Drizzle",
         "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "Python",
+        "FastAPI",
+        "Pinecone",
+        "Langchain",
+        "Cloudflare",
       ],
       links: [
         {
           type: "Website",
-          href: "https://chatcollect.com",
+          href: "https://zendrapdf.vercel.app",
           icon: <Icons.globe className="size-3" />,
         },
       ],
       image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+      video: "/zendra.mp4",
     },
     {
-      title: "Magic UI",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
+      title: "ASPDC Website",
+      href: "https://aspdc.vercel.app",
+      dates: "Aug 2025 - Sept 2025",
       active: true,
       description:
-        "Designed, developed and sold animated UI components for developers.",
+        "Designed and developed a modern, visually appealing website for our university’s programming club — ASPDC. Focused on performance, clean transitions, and a content-driven experience powered by Zenblog.",
       technologies: [
         "Next.js",
         "Typescript",
         "PostgreSQL",
-        "Prisma",
+        "Drizzle",
         "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "Shadcn",
+        "Zenblog",
       ],
       links: [
         {
           type: "Website",
-          href: "https://magicui.design",
+          href: "https://aspdc.vercel.app",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
+          href: "https://github.com/aspdc/aspdc-revamped",
           icon: <Icons.github className="size-3" />,
         },
       ],
       image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      video: "aspdc.mp4",
     },
     {
-      title: "llm.report",
-      href: "https://llm.report",
-      dates: "April 2023 - September 2023",
+      title: "Askify",
+      href: "https://askify-mocha.vercel.app",
+      dates: "May 2025",
       active: true,
       description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
+        "Created a fun conversational AI app offering three unique chatbot personalities: Indian Mom, Toxic Friend, and a neutral assistant. Built with a lightweight interface and powered by the Gemini API.",
+      technologies: ["Next.js", "Typescript", "TailwindCSS", "Gemini API"],
       links: [
         {
           type: "Website",
-          href: "https://llm.report",
+          href: "https://askify-mocha.vercel.app",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
+          href: "https://github.com/vyeos/askify",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/askify.png",
+      video: "",
+    },
+    {
+      title: "Vibe-Zone",
+      href: "https://vibe-zone-tan.vercel.app",
+      dates: "Feb 2025 - March 2025",
+      active: true,
+      description:
+        "Developed a real-time chat application using WebSockets. Designed for simplicity and responsiveness, enabling instant messaging with live updates across clients.",
+      technologies: ["HTML/CSS", "Node.js", "Web Sockets"],
+      links: [
+        {
+          type: "Website",
+          href: "https://vibe-zone-tan.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/vyeos/Vibe-Zone",
           icon: <Icons.github className="size-3" />,
         },
       ],
       image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
-    },
-    {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
-      active: true,
-      description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://automatic.chat",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+      video: "/vibe-zone.mp4",
     },
   ],
   hackathons: [
@@ -224,7 +209,7 @@ export const DATA = {
       dates: "April 25th - 26st, 2025",
       location: "ADANI University, Gandhinagar",
       description:
-        "Developed a web application which helps to book hotels and flights from a one place.",
+        "Built a unified travel-booking platform that allows users to book hotels and flights from a single interface, simplifying the search and comparison experience.",
       image: "/hackspire.jpeg",
       links: [
         {
@@ -240,7 +225,7 @@ export const DATA = {
       dates: "March 23rd - 24th, 2025",
       location: "Ahmedabad University, Ahmedabad",
       description:
-        "Developed a web application to connect farmers directly to the consumers and thus elimicating the middlemen.",
+        "Developed a platform connecting farmers directly with consumers, removing intermediaries to provide better pricing, transparency, and access.",
       image: "",
       links: [],
     },
