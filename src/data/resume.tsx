@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { FileText, HomeIcon, NotebookPen } from "lucide-react";
 
 export const DATA = {
   name: "Rudra Patel",
@@ -8,7 +8,7 @@ export const DATA = {
   location: "Ahmedabad, Gujarat",
   locationLink: "",
   description:
-    "Just a guy trying to make awesome and performant software. (I user neovim btw)",
+    "Just a guy trying to make awesome and performant software. (I use neovim btw)",
   summary:
     "Full-stack developer with a strong focus on performance, user and developer experience, and clean system design. I enjoy turning ideas into scalable products using modern web technologies.",
   avatarUrl: "/me.jpg",
@@ -26,7 +26,8 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    { href: "/resume.pdf", icon: FileText, label: "Resume" },
+    // { href: "/blog", icon: NotebookPen, label: "Blog" },
   ],
   contact: {
     email: "rudranpatel0980@gmail.com",
@@ -53,12 +54,6 @@ export const DATA = {
 
         navbar: true,
       },
-      // Youtube: {
-      //   name: "Youtube",
-      //   url: "https://dub.sh/dillion-youtube",
-      //   icon: Icons.youtube,
-      //   navbar: true,
-      // },
       Email: {
         name: "Send Email",
         url: "mailto:rudranpatel0980@gmail.com",

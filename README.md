@@ -1,5 +1,5 @@
 # TODO
 
-[] Summary/About 
-[] projects
-[] personal touch
+[-] Summary/About 
+[-] projects
+[-] personal touch
