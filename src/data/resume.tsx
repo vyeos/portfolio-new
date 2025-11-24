@@ -7,10 +7,11 @@ export const DATA = {
   url: "https://www.rudarp.vercel.app",
   location: "Ahmedabad, Gujarat",
   locationLink: "",
-  description: "Just a guy trying to make awesome and performant software.",
+  description:
+    "Just a guy trying to make awesome and performant software. (I user neovim btw)",
   summary:
     "Full-stack developer with a strong focus on performance, user and developer experience, and clean system design. I enjoy turning ideas into scalable products using modern web technologies.",
-  avatarUrl: "/me.JPG",
+  avatarUrl: "/me.jpg",
   skills: [
     "React",
     "Next.js",
